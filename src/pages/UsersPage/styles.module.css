@@ -1,0 +1,24 @@
+.root {
+    max-height: calc(100vh - 64px); /* minus vertical paddings */
+    overflow: auto;
+    padding-right: 7px;
+}
+.root::-webkit-scrollbar {
+    width: 7px;
+}
+.root::-webkit-scrollbar-thumb {
+    background-color: #00000040;
+    border-radius: 4px;
+}
+
+.user {
+    display: block;
+    padding: 20px;
+    color: #fff;
+    background-color: #00000040;
+    cursor: pointer;
+}
+
+.user:not(:last-child) {
+    margin-bottom: 20px;
+}
